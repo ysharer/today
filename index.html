@@ -12,8 +12,7 @@
       border-bottom: 1px solid #ffffff;
               border-left: 0px solid #ff37eb;
       border-top: 0px solid #ff37eb;
-              border-right: 1px solid #ff37eb 
-                  border-height: calc(100% - 1px solid #ffffff); /* Sobrescreve apenas o lado direito */
+              border-right: 1px solid #ff37eb; 
       position: fixed;
       top: 0;
       width: 90%;
@@ -23,7 +22,15 @@
       justify-content: center;
       z-index: 9999;
     }
-
+    .navbar::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: calc(100% - 1px); /* Corta 1px da base */
+      background-color: #000000; /* cor da "borda" simulada */
+    }
     .navbar2 {
       overflow: hidden;
       background-color: #fecc00;

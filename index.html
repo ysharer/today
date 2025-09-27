@@ -33,6 +33,16 @@
       padding-top: 80px; /* espaço para a navbar horizontal */
     }
 
+          .navbar-2 img {
+      width: 40px;
+      height: 40px;
+      margin: 15px 0;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .navbar-2 img:hover {
+      transform: scale(1.1);
     /* Estilizando itens da navbar */
     .navbar-2 a {
       margin: 10px 0;
@@ -41,6 +51,10 @@
       font-weight: bold;
     }
 
+            @media (max-width: 1023px) {
+      .navbar-2 {
+        display: none;
+      }
     body {
       background-color: #ffffff;
       margin: 0;

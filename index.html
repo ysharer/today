@@ -51,6 +51,33 @@
       border: 0px solid #ffffff;
     }
 
+body {
+  --sb-track-color: #000000;
+  --sb-thumb-color: #ffff00;
+  --sb-size: 22px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 0px;
+  border: 4px solid #000000;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
     .donate-ismage {
       height: 20px;
     }

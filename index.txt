@@ -4,9 +4,23 @@
   <link rel="shortcut icon" href="favicon-ysharer.ico" type="image/x-icon">
   <style>
     body {
-      background-color: #ffffff;
+      font-family: 'Wix Madefor Text', sans-serif;
       margin: 0;
       padding: 0;
+      position: relative;
+      min-height: 100vh;
+      background-color: #fff; /* cor de fundo opcional */
+    }
+
+    /* Texto no fundo, canto inferior direito */
+    .background-text {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.1); /* cor suave para parecer no fundo */
+      pointer-events: none; /* para não interferir em cliques */
+      user-select: none;    /* não selecionável */
     }
 
     .border {
@@ -22,6 +36,8 @@
   </style>
 </head>
 <body>
+  <div class="background-text">Build on Wix Studio</div>
+
   <!-- CONTEÚDO PRINCIPAL -->
   <iframe 
     src="https://ysharer.wixstudio.com/english" 
@@ -31,6 +47,7 @@
   </iframe>
 </body>
 </html>
+
 
 
 

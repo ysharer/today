@@ -13,10 +13,6 @@
       border: 0px solid #000000;
     }
 
-    .logo-image {
-      height: 20px;
-    }
-
     iframe {
       width: 100%;
       height: 586px;
@@ -26,10 +22,14 @@
   </style>
 </head>
 <body>
-
   <!-- CONTEÚDO PRINCIPAL -->
-  <iframe src="https://ysharer.wixstudio.com/english"></iframe>
-
+  <iframe 
+    src="https://ysharer.wixstudio.com/english" 
+    width="100%" 
+    height="600" 
+    style="border:1px solid #ccc;">
+  </iframe>
 </body>
 </html>
+
 
